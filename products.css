@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(58, 58, 255);
+}
+#input{
+    margin: 40px 0px 0 20px;
+    width: 240px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.border{
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 10px ;
+    width: 200px;
+    height: 440px;
+}
+.container{
+    display: flex;
+}
+#cardDiv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.othercolor{
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 25px 0 0 20px;
+    width: 220px;
+    height: 460px;
+}
+.cardss{
+    border: 4px solid lightgreen;
+    background-color: #155044;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5%;
+    color: white;
+    padding: 10px 20px; 
+    margin: 0 0 20px 50px;  
+}
+.cards{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.button{
+    background-color: #155044;
+    border-radius: 50%;
+    border: none;
+    margin-top: 10px;
+}
+.image{
+   width: 220px;
+   height: 150px;
+   border: 4px solid lightgreen;
+   border-radius: 10px;
+}
+.cardss2{
+    color: black;
+    text-align: center;
+}
+.image2{
+    width: 190px;
+    height: 130px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.cards2{
+    margin-top: 7px;
+}
+.name2{
+    font-weight: 1000;
+    margin-bottom: 20px;
+}

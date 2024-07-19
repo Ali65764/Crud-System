@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin2.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Crud</title>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="brand-title">Crud System</div>
+
+        <a href="#" class="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <div class="navbar-links">
+            <ul>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+
+        <div id="personForm" class="form">
+            <h1 class="title">Add Product</h1>
+            <div class="input-container ic1">
+                <input id="ProductName" class="input" type="text" placeholder="ProductName" />
+            </div>
+            <div class="input-container ic2">
+                <input id="ImageUrl" class="input" type="text" placeholder="Image URL" />
+            </div>
+            <div class="input-container ic2">
+                <input id="Description" class="input" type="text" placeholder="Description" />
+            </div>
+            <div class="input-container ic2">
+                <input id="Category" class="input" type="text" placeholder="Category " />
+            </div>
+            <div class="input-container ic2">
+                <input id="Price" class="input" type="number" placeholder="Price" />
+            </div>
+            <div class="input-container ic2">
+                <input id="Discount" class="input" type="number" placeholder="DiscountPrice" />
+            </div>
+
+            <div class="input-container ic2">
+                <input id="Count" class="input" type="number" placeholder="Count" />
+            </div>
+            <div class="input-container ic2">
+                <input id="Rating" class="input" type="number" placeholder="Rating " />
+            </div>
+
+            <button type="text" class="submit" >Submit</button>
+           
+        </div>
+
+
+
+    </div>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+                <tr>
+                    <th>ProductName</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Count</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr>
+                </tr>
+
+                <tr>
+                </tr>
+
+                <tr>
+                </tr>
+            <tbody>
+        </table>
+    </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEditModal()">&times;</span>
+            <h2>Edit Product</h2>
+
+            <div class="input-container ic1">
+                <input id="EditProductName" class="input" type="text" placeholder="ProductName" />
+            </div>
+            <div class="input-container ic2">
+                <input id="EditImageUrl" class="input" type="text" placeholder="ImageUrl" />
+            </div>
+            <div class="input-container ic2">
+                <input id="EditDescription" class="input" type="text" placeholder="Description" />
+            </div>
+            <div class="input-container ic2">
+                <input id="EditCategory" class="input" type="text" placeholder="Category " />
+            </div>
+            <div class="input-container ic2">
+                <input id="EditPrice" class="input" type="number" placeholder="Price" />
+            </div>
+            <div class="input-container ic2">
+                <input id="EditDiscount" class="input" type="number" placeholder="DiscountPrice" />
+            </div>
+            <div class="input-container ic2">
+                <input id="EditCount" class="input" type="number" placeholder="Count" />
+            </div>
+            <div class="input-container ic2">
+                <input id="EditRating" class="input" type="number" placeholder="Rating " />
+            </div>
+
+            <button type="button" class="submit" onclick="updateProduct()">Update</button>
+        </div>
+   </div>
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+ 
+
+
+
+
+ 

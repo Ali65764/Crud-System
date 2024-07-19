@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "productName": "Xiomi",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/f7ddf56c9575d0bd144936c69d08ce67/t/m/tm-dg-sbp-1105-sm-2731_1.png",
+      "description": "good battery",
+      "category": "phone",
+      "price": 1000,
+      "discount": 30,
+      "count": 7,
+      "rating": 4,
+      "id": "e378"
+    },
+    {
+      "productName": "iphone",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/f7ddf56c9575d0bd144936c69d08ce67/t/m/tm-dg-sbp-1105-sm-2524_1.png",
+      "description": "good phone",
+      "category": "phone",
+      "price": 333,
+      "discount": 3,
+      "count": 3,
+      "rating": 30,
+      "id": "e546"
+    },
+    {
+      "id": "34a2",
+      "productName": "Asus",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/f7ddf56c9575d0bd144936c69d08ce67/t/m/tm-dg-kot-1114-nb-2359.png",
+      "description": "good computer",
+      "category": "computer",
+      "price": 2700,
+      "discount": 30,
+      "count": 6,
+      "rating": 5
+    },
+    {
+      "id": "6ee6",
+      "productName": "samsung",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/f7ddf56c9575d0bd144936c69d08ce67/t/m/tm-dg-sbp-1105-sm-2163.png",
+      "description": "good phone",
+      "category": "phone",
+      "price": 2700,
+      "discount": 50,
+      "count": 4,
+      "rating": 5
+    }
+  ]
+}
