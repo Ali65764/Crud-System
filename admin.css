@@ -1,94 +1,171 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
+  background-color: #4d93e3;
   font-family: "Poppins", sans-serif;
 }
-.navbar {
+
+/*ADDTABLE*/
+main {
   display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #155044;
-  color: #c6e3f8;
-  padding: 4px;
+  justify-content: center;
+  margin: 10px;
+}
+main .form-container {
+  background-color: #15172b;
+  width: 450px;
+  height: 410px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+}
+main .form-container .form-title {
+  color: white;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.brand-title {
-  font-size: 1.5rem;
-  margin: 0.5rem;
-}
-
-.navbar-links ul {
-  display: flex;
-  align-items: center;
-  margin: 0 15px 0 0;
-}
-
-.navbar-links li {
-  list-style: none;
-}
-
-.navbar-links li a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  padding: 1rem;
-}
-
-.navbar-links li:hover {
-  background-color: #c6e3f8;
+.input-container input {
+  width: 100%;
+  height: 30px;
+  background-color: #303245;
+  border: none;
+  padding: 8px 20px;
   border-radius: 5px;
-  transition: 0.5s ease-in-out;
+  margin: 5px 0;
+  color: white;
+  font-size: 18px;
+  outline: none;
 }
 
-.toggle-button {
-  position: absolute;
-  top: 0.3rem;
-  right: 1.2rem;
+.action-button {
+  background-color: #0088dd;
+  padding: 7px 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.action-button:hover {
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.action-button p {
+  color: white;
+  font-size: 13px;
+}
+
+/*TABLE*/
+.table-container {
+  margin: 20px 70px;
+  overflow-x: auto;
+}
+.table-container table {
+  width: 100%;
+  max-width: 100%;
+  font-size: 23px;
+  border-collapse: collapse;
+  background-color: #ededed;
+  white-space: nowrap;
+}
+.table-container table thead th {
+  color: white;
+  background-color: #15172b;
+}
+.table-container table th,
+td {
+  text-align: center;
+  padding: 12px;
+}
+
+.table-container table tbody tr {
+  border-bottom: 2px solid #15172b;
+}
+.table-container table tbody td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.table-container table tbody td {
+  border-right: 2px solid #15172b;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.table-container table .editBtn {
+  background-color: #64bd1b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.table-container table .editBtn:hover {
+  opacity: 0.6;
+  transition: 0.5s ease;
+}
+.table-container table .deleteBtn:hover {
+  opacity: 0.6;
+  transition: 0.5s ease;
+}
+.table-container table .deleteBtn {
+  background-color: #dc2f55;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/*EDIT*/
+.modal {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35px;
-  height: 25px;
-  color: #52748e;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  height: auto;
+  width: 90%;
+  padding: 15px;
+  text-align: center;
+  animation-name: topAnimation;
+  animation-duration: 0.5s;
+}
+.modal .modal-content .modal-header {
+  text-transform: uppercase;
+  color: blue;
+  font-size: 25px;
+  margin: 15px 0;
+  font-weight: 700;
+}
+.close {
+  float: right;
+  color: gray;
+  font-size: 45px;
+  cursor: pointer;
 }
 
-i {
-  color: #c6e3f8;
-  font-size: 40px;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+@keyframes topAnimation {
+  from {
+    top: -200px;
   }
-
-  .toggle-button {
-    display: flex;
-  }
-
-  .navbar-links {
-    display: none; /* none elemeyimizin sebebi toggle olanda activden bu classa kecende bunun yox olmali olmasidir */
-    width: 100%;
-  }
-  /* nav-bar links none eliyib active classi flex edirikki toggle edende acilsin */
-  .navbar-links.active {
-    display: flex;
-    background-color: #2500b8;
-  }
-  /* html-de active classi yoxdur onu js-le biz  add edirik */
-  .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .navbar-links ul li {
-    text-align: center;
-  }
-
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-    border-top: 1px solid #155044;
+  to {
+    top: 50%;
   }
 }

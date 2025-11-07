@@ -1,48 +1,26 @@
 {
-  "posts": [
+  "products": [
     {
-      "productName": "Xiomi",
-      "imageUrl": "https://kontakt.az/media/catalog/product/cache/f7ddf56c9575d0bd144936c69d08ce67/t/m/tm-dg-sbp-1105-sm-2731_1.png",
-      "description": "good battery",
-      "category": "phone",
-      "price": 1000,
-      "discount": 30,
-      "count": 7,
-      "rating": 4,
-      "id": "e378"
+      "productName": "iphone 14",
+      "imageUrl": "https://kontakt.az/media/catalog/product/cache/a404967cc40694dc557cd869288440a4/t/m/tm-dg-sbp-1105-sm-2933_4-a1e1bd57.webp",
+      "description": "Smartphone",
+      "category": "Phones",
+      "price": "1200",
+      "discountPrice": "1000",
+      "count": "15",
+      "rating": "12",
+      "id": "1"
     },
     {
-      "productName": "iphone",
-      "imageUrl": "https://kontakt.az/media/catalog/product/cache/f7ddf56c9575d0bd144936c69d08ce67/t/m/tm-dg-sbp-1105-sm-2524_1.png",
-      "description": "good phone",
-      "category": "phone",
-      "price": 333,
-      "discount": 3,
-      "count": 3,
-      "rating": 30,
-      "id": "e546"
-    },
-    {
-      "id": "34a2",
-      "productName": "Asus",
-      "imageUrl": "https://kontakt.az/media/catalog/product/cache/f7ddf56c9575d0bd144936c69d08ce67/t/m/tm-dg-kot-1114-nb-2359.png",
-      "description": "good computer",
-      "category": "computer",
-      "price": 2700,
-      "discount": 30,
-      "count": 6,
-      "rating": 5
-    },
-    {
-      "id": "6ee6",
-      "productName": "samsung",
-      "imageUrl": "https://kontakt.az/media/catalog/product/cache/f7ddf56c9575d0bd144936c69d08ce67/t/m/tm-dg-sbp-1105-sm-2163.png",
-      "description": "good phone",
-      "category": "phone",
-      "price": 2700,
-      "discount": 50,
-      "count": 4,
-      "rating": 5
+      "id": "5871",
+      "productName": "Samsung",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm5hHANz6aT-5NcugwT6goIfCECJFzLUW4pQ&s",
+      "description": "Good",
+      "category": "Phone",
+      "price": "2000",
+      "discountPrice": "50",
+      "count": "10",
+      "rating": "5"
     }
   ]
 }

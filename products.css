@@ -1,82 +1,90 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: rgb(58, 58, 255);
+body {
+    background-color: #4d93e3;
+    font-family: "Poppins", sans-serif;
 }
-#input{
-    margin: 40px 0px 0 20px;
-    width: 240px;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-}
-.border{
-    background-color: lightblue;
-    border-radius: 10px;
-    padding: 10px ;
-    width: 200px;
-    height: 440px;
-}
-.container{
+main {
     display: flex;
+    padding: 25px 20px;
 }
-#cardDiv{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-.othercolor{
-    background-color: #fff; 
-    padding: 20px;
+main .search-detail input {
+    padding: 7px 10px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 25px 0 0 20px;
-    width: 220px;
-    height: 460px;
-}
-.cardss{
-    border: 4px solid lightgreen;
-    background-color: #155044;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5%;
-    color: white;
-    padding: 10px 20px; 
-    margin: 0 0 20px 50px;  
-}
-.cards{
-    text-align: center;
-    margin-top: 10px;
-    font-size: 17px;
-}
-.button{
-    background-color: #155044;
-    border-radius: 50%;
+    width: 250px;
     border: none;
-    margin-top: 10px;
+    border: 3px solid lightgreen;
+    box-shadow: 0 0 13px lightgreen;
+    outline: none;
 }
-.image{
-   width: 220px;
-   height: 150px;
-   border: 4px solid lightgreen;
-   border-radius: 10px;
-}
-.cardss2{
-    color: black;
-    text-align: center;
-}
-.image2{
-    width: 190px;
-    height: 130px;
+
+main .search-detail .main-border {
+    background-color: #fff;
     margin-top: 20px;
     border-radius: 10px;
+    width: 250px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.cards2{
-    margin-top: 7px;
+main #products {
+    display: flex;
+    margin: 15px 50px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
-.name2{
-    font-weight: 1000;
+main #products .cards .card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #155044;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border: 4px solid lightgreen;
+    border-radius: 10px;
+    line-height: 35px;
+    font-size: 17px;
+}
+main #products .cards .card .product-image img {
+    width: 250px;
+    height: 150px;
+    border: 5px solid lightgreen;
+    border-radius: 5px;
+    object-fit: cover;
+}
+main #products .cards .card .eye-button {
+    border: none;
+    background-color: #155044;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(152, 241, 212);
+}
+
+main .main-border {
+    padding: 20px;
+}
+main .main-border .product-detail {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 35px;
+    font-size: 18px;
+    height: 450px;
+}
+main .main-border .product-detail .single-card-name {
+    font-weight: 700;
     margin-bottom: 20px;
+}
+main .main-border .product-detail .single-card-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 130px;
+}
+@media only screen and (max-width: 768px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
 }
